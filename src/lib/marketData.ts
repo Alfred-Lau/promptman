@@ -1,6 +1,6 @@
 /**
  * Prompt 和 Skill 市场数据（内置示例模板）
- * downloads / rating 等为展示用示意数值，不代表真实线上统计。
+ * 内置模板没有线上使用统计。兼容字段保留为 0，UI 不展示为真实热度。
  */
 
 export interface MarketPrompt {
@@ -56,8 +56,8 @@ Format your review as:
     category: 'Development',
     tags: ['code-review', 'programming', 'best-practices'],
     author: 'PromptMan Team',
-    downloads: 2847,
-    rating: 4.9,
+    downloads: 0,
+    rating: 0,
     featured: true
   },
   {
@@ -82,8 +82,8 @@ Output Format:
     category: 'Writing',
     tags: ['documentation', 'technical-writing', 'markdown'],
     author: 'PromptMan Team',
-    downloads: 1956,
-    rating: 4.8,
+    downloads: 0,
+    rating: 0,
     featured: true
   },
   {
@@ -110,8 +110,8 @@ Always explain WHY each optimization helps and provide estimated performance imp
     category: 'Database',
     tags: ['sql', 'database', 'performance', 'optimization'],
     author: 'PromptMan Team',
-    downloads: 1543,
-    rating: 4.7
+    downloads: 0,
+    rating: 0,
   },
   {
     id: 'market-prompt-4',
@@ -135,8 +135,8 @@ Output includes:
     category: 'Frontend',
     tags: ['react', 'typescript', 'components', 'frontend'],
     author: 'PromptMan Team',
-    downloads: 2134,
-    rating: 4.8,
+    downloads: 0,
+    rating: 0,
     featured: true
   },
   {
@@ -162,8 +162,8 @@ Output Format:
     category: 'Backend',
     tags: ['api', 'rest', 'design', 'backend'],
     author: 'PromptMan Team',
-    downloads: 1876,
-    rating: 4.7
+    downloads: 0,
+    rating: 0,
   },
   {
     id: 'market-prompt-6',
@@ -198,8 +198,8 @@ Closes #123`,
     category: 'Development',
     tags: ['git', 'commit', 'conventional-commits'],
     author: 'PromptMan Team',
-    downloads: 3241,
-    rating: 4.9,
+    downloads: 0,
+    rating: 0,
     featured: true
   },
   {
@@ -229,8 +229,8 @@ Provide clear explanations of:
     category: 'Development',
     tags: ['debugging', 'troubleshooting', 'problem-solving'],
     author: 'PromptMan Team',
-    downloads: 1654,
-    rating: 4.6
+    downloads: 0,
+    rating: 0,
   },
   {
     id: 'market-prompt-8',
@@ -266,8 +266,8 @@ describe('ComponentName', () => {
     category: 'Testing',
     tags: ['testing', 'unit-tests', 'jest', 'vitest'],
     author: 'PromptMan Team',
-    downloads: 1432,
-    rating: 4.7
+    downloads: 0,
+    rating: 0,
   },
   {
     id: 'market-prompt-9',
@@ -295,8 +295,8 @@ For each finding:
     category: 'Security',
     tags: ['security', 'audit', 'vulnerabilities', 'owasp'],
     author: 'PromptMan Team',
-    downloads: 1287,
-    rating: 4.8
+    downloads: 0,
+    rating: 0,
   },
   {
     id: 'market-prompt-10',
@@ -327,8 +327,8 @@ For each suggestion:
     category: 'Architecture',
     tags: ['refactoring', 'design-patterns', 'clean-code'],
     author: 'PromptMan Team',
-    downloads: 1098,
-    rating: 4.6
+    downloads: 0,
+    rating: 0,
   },
   {
     id: 'market-prompt-11',
@@ -360,8 +360,8 @@ Provide:
     category: 'AI',
     tags: ['prompt-engineering', 'ai', 'optimization', 'llm'],
     author: 'PromptMan Team',
-    downloads: 2567,
-    rating: 4.9,
+    downloads: 0,
+    rating: 0,
     featured: true
   },
   {
@@ -407,8 +407,8 @@ Provide your video topic and I'll generate the perfect thumbnail prompt.`,
     category: 'Design',
     tags: ['nano-banana', 'youtube', 'thumbnail', 'image-generation', 'marketing'],
     author: 'PromptMan Team',
-    downloads: 4521,
-    rating: 4.9,
+    downloads: 0,
+    rating: 0,
     featured: true
   },
   {
@@ -458,8 +458,8 @@ Tell me your brand, platform, and campaign goal for a customized banner prompt.`
     category: 'Design',
     tags: ['nano-banana', 'social-media', 'banner', 'image-generation', 'branding'],
     author: 'PromptMan Team',
-    downloads: 3876,
-    rating: 4.8,
+    downloads: 0,
+    rating: 0,
     featured: true
   },
   {
@@ -503,8 +503,8 @@ Provide your product details, target market, and visual style for a custom promp
     category: 'Design',
     tags: ['nano-banana', 'ecommerce', 'product-photo', 'image-generation', 'marketing'],
     author: 'PromptMan Team',
-    downloads: 3214,
-    rating: 4.8
+    downloads: 0,
+    rating: 0,
   },
   {
     id: 'market-prompt-nano-banner-4',
@@ -546,8 +546,8 @@ Provide your topic, data, and target audience for a custom infographic prompt.`,
     category: 'Design',
     tags: ['nano-banana', 'infographic', 'data-viz', 'image-generation', 'education'],
     author: 'PromptMan Team',
-    downloads: 2654,
-    rating: 4.7,
+    downloads: 0,
+    rating: 0,
     featured: true
   },
   {
@@ -579,8 +579,8 @@ Output Format:
     category: 'Data',
     tags: ['data-analysis', 'statistics', 'insights'],
     author: 'PromptMan Team',
-    downloads: 1654,
-    rating: 4.7
+    downloads: 0,
+    rating: 0,
   }
 ]
 
@@ -636,8 +636,8 @@ pip install requests beautifulsoup4 lxml
     allowedTools: ['Read', 'Bash(python:*)', 'Bash(node:*)'],
     tags: ['scraping', 'web', 'data-collection', 'automation'],
     author: 'PromptMan Team',
-    downloads: 3456,
-    rating: 4.8,
+    downloads: 0,
+    rating: 0,
     featured: true
   },
   {
@@ -683,8 +683,8 @@ Thank you for joining {{company_name}}...
 `,
     tags: ['email', 'automation', 'communication'],
     author: 'PromptMan Team',
-    downloads: 2134,
-    rating: 4.6
+    downloads: 0,
+    rating: 0,
   },
   {
     id: 'market-skill-3',
@@ -735,8 +735,8 @@ npm install puppeteer
     allowedTools: ['Read', 'Write', 'Bash(python:*)'],
     tags: ['pdf', 'document', 'generation', 'export'],
     author: 'PromptMan Team',
-    downloads: 1876,
-    rating: 4.7,
+    downloads: 0,
+    rating: 0,
     featured: true
   },
   {
@@ -795,8 +795,8 @@ requests.post(webhook_url, json=payload)
 `,
     tags: ['slack', 'notification', 'integration', 'messaging'],
     author: 'PromptMan Team',
-    downloads: 2543,
-    rating: 4.8
+    downloads: 0,
+    rating: 0,
   },
   {
     id: 'market-skill-5',
@@ -857,8 +857,8 @@ refactor: Code refactoring
     allowedTools: ['Bash(git:*)'],
     tags: ['git', 'version-control', 'devops', 'automation'],
     author: 'PromptMan Team',
-    downloads: 1987,
-    rating: 4.7
+    downloads: 0,
+    rating: 0,
   },
   {
     id: 'market-skill-6',
@@ -919,8 +919,8 @@ pip install Pillow
     allowedTools: ['Bash(python:*)', 'Read', 'Write'],
     tags: ['image', 'optimization', 'media', 'compression'],
     author: 'PromptMan Team',
-    downloads: 1654,
-    rating: 4.6
+    downloads: 0,
+    rating: 0,
   },
   {
     id: 'market-skill-7',
@@ -978,8 +978,8 @@ result = {
 `,
     tags: ['json', 'data', 'transformation', 'parsing'],
     author: 'PromptMan Team',
-    downloads: 1432,
-    rating: 4.5
+    downloads: 0,
+    rating: 0,
   },
   {
     id: 'market-skill-8',
@@ -1042,8 +1042,8 @@ crontab -r          # Remove all jobs
     allowedTools: ['Bash'],
     tags: ['cron', 'scheduler', 'automation', 'tasks'],
     author: 'PromptMan Team',
-    downloads: 1876,
-    rating: 4.7,
+    downloads: 0,
+    rating: 0,
     featured: true
   },
   {
@@ -1117,8 +1117,8 @@ pip install sentence-transformers chromadb
     allowedTools: ['Bash(python:*)'],
     tags: ['vector', 'search', 'ai', 'embeddings', 'semantic'],
     author: 'PromptMan Team',
-    downloads: 2345,
-    rating: 4.8,
+    downloads: 0,
+    rating: 0,
     featured: true
   },
   {
@@ -1178,8 +1178,8 @@ def verify_signature(payload, signature):
 `,
     tags: ['webhook', 'integration', 'api', 'events'],
     author: 'PromptMan Team',
-    downloads: 1543,
-    rating: 4.6
+    downloads: 0,
+    rating: 0,
   },
   {
     id: 'market-skill-11',
@@ -1242,8 +1242,8 @@ error_counts = Counter(errors)
     allowedTools: ['Bash', 'Read'],
     tags: ['logs', 'monitoring', 'analysis', 'devops'],
     author: 'PromptMan Team',
-    downloads: 1234,
-    rating: 4.5
+    downloads: 0,
+    rating: 0,
   },
   {
     id: 'market-skill-12',
@@ -1304,8 +1304,8 @@ result = translator.translate_text(
 `,
     tags: ['translation', 'nlp', 'language', 'localization'],
     author: 'PromptMan Team',
-    downloads: 2876,
-    rating: 4.7
+    downloads: 0,
+    rating: 0,
   },
   {
     id: 'market-skill-13',
@@ -1344,8 +1344,8 @@ server.registerTool("search_docs", { description: "Search docs" }, async ({ quer
     allowedTools: ['Read', 'Write', 'Bash(node:*)', 'Bash(python:*)'],
     tags: ['mcp', 'agent-tools', 'ai-infra', 'integration'],
     author: 'PromptMan Team',
-    downloads: 4120,
-    rating: 4.9,
+    downloads: 0,
+    rating: 0,
     releaseDate: '2026-01-15',
     featured: true
   },
@@ -1383,8 +1383,8 @@ Orchestrate multi-agent and multi-step workflows with observability and rollback
     allowedTools: ['Read', 'Write', 'Bash(node:*)', 'Bash(python:*)', 'Bash'],
     tags: ['workflow', 'orchestration', 'agents', 'automation'],
     author: 'PromptMan Team',
-    downloads: 3890,
-    rating: 4.8,
+    downloads: 0,
+    rating: 0,
     releaseDate: '2026-01-28',
     featured: true
   },
@@ -1421,8 +1421,8 @@ Design retrieval pipelines that combine vector, keyword, and metadata filtering.
     allowedTools: ['Read', 'Write', 'Bash(python:*)', 'Bash(node:*)'],
     tags: ['rag', 'multimodal', 'retrieval', 'llm'],
     author: 'PromptMan Team',
-    downloads: 3650,
-    rating: 4.8,
+    downloads: 0,
+    rating: 0,
     releaseDate: '2026-02-05',
     featured: true
   },
@@ -1463,8 +1463,8 @@ await browser.close();
     allowedTools: ['Read', 'Write', 'Bash(node:*)'],
     tags: ['playwright', 'browser-automation', 'e2e', 'testing'],
     author: 'PromptMan Team',
-    downloads: 3420,
-    rating: 4.7,
+    downloads: 0,
+    rating: 0,
     releaseDate: '2026-02-18'
   },
   {
@@ -1508,8 +1508,8 @@ Design and implement polished, memorable frontend experiences with a clear visua
     allowedTools: ['Read', 'Write', 'Bash(node:*)'],
     tags: ['frontend', 'design', 'ui', 'ux', 'css', 'claude-code'],
     author: 'Anthropic Community',
-    downloads: 5380,
-    rating: 4.9,
+    downloads: 0,
+    rating: 0,
     releaseDate: '2026-02-22',
     featured: true
   }
@@ -1571,59 +1571,9 @@ export function searchMarketSkills(query: string, category?: string): MarketSkil
   return results
 }
 
-function getSkillPublishedTimestamp(skill: MarketSkill): number {
-  if (skill.releaseDate) {
-    const ts = Date.parse(skill.releaseDate)
-    if (!Number.isNaN(ts)) {
-      return ts
-    }
-  }
-
-  // 兼容旧数据：从 market-skill-数字 的编号推断时间顺序
-  const idMatch = skill.id.match(/(\d+)$/)
-  return idMatch ? Number(idMatch[1]) * 24 * 60 * 60 * 1000 : 0
-}
-
-/**
- * 最新流行 Skills：结合下载量、评分、发布时间进行综合排序
- */
+/** Curated built-in templates; no inferred popularity or fabricated statistics. */
 export function getLatestPopularSkills(limit = 12): MarketSkill[] {
-  if (marketSkills.length === 0) {
-    return []
-  }
-
-  const maxDownloads = Math.max(...marketSkills.map(skill => skill.downloads), 1)
-  const publishedTimestamps = marketSkills.map(getSkillPublishedTimestamp)
-  const maxPublishedAt = Math.max(...publishedTimestamps, 1)
-  const minPublishedAt = Math.min(...publishedTimestamps, 0)
-  const publishedRange = Math.max(maxPublishedAt - minPublishedAt, 1)
-
-  return [...marketSkills]
-    .map((skill) => {
-      const normalizedDownloads = skill.downloads / maxDownloads
-      const normalizedRating = skill.rating / 5
-      const normalizedRecency = (getSkillPublishedTimestamp(skill) - minPublishedAt) / publishedRange
-      const featuredBonus = skill.featured ? 0.05 : 0
-
-      const score =
-        normalizedDownloads * 0.5 +
-        normalizedRating * 0.2 +
-        normalizedRecency * 0.3 +
-        featuredBonus
-
-      return { skill, score }
-    })
-    .sort((a, b) => {
-      if (b.score !== a.score) {
-        return b.score - a.score
-      }
-      if (b.skill.downloads !== a.skill.downloads) {
-        return b.skill.downloads - a.skill.downloads
-      }
-      return b.skill.rating - a.skill.rating
-    })
-    .slice(0, limit)
-    .map(({ skill }) => skill)
+  return [...marketSkills].sort((a,b) => Number(!!b.featured)-Number(!!a.featured)).slice(0,limit)
 }
 
 // 获取精选内容
