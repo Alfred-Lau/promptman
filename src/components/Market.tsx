@@ -196,7 +196,7 @@ export default function Market({ onImportSuccess, section = 'overview', focusId 
       }
       if (viewMode === 'trending') {
         // 提示词市集暂无单独趋势算法，按下载量取前若干条作为「趋势」占位
-        return [...marketPrompts].sort((a, b) => Number(!!b.featured) - Number(!!a.featured)).slice(0, 12)
+        return [...marketPrompts].sort((a, b) => b.downloads - a.downloads).slice(0, 12)
       }
     }
     return searchMarketPrompts(searchQuery, selectedCategory)
@@ -1725,7 +1725,7 @@ function PromptCard({
       <div className="card-tags">{prompt.tags.slice(0, 3).map(tag => (<span key={tag} className="tag">{tag}</span>))}{prompt.tags.length > 3 && (<span className="tag-more">+{prompt.tags.length - 3}</span>)}</div>
       {isExpanded && (<div className="card-preview"><pre>{prompt.content}</pre></div>)}
       <div className="card-footer">
-        <div className="card-stats">Built-in template / 内置模板</div>
+        <div className="card-stats"><span className="stat-item"><Download size={14} />{prompt.downloads.toLocaleString()}</span><span className="stat-item"><Star size={14} />{prompt.rating}</span></div>
         <div className="card-actions"><button className="btn-preview" onClick={onToggleExpand}>{isExpanded ? m.hide : m.preview}</button><button className={`btn-import ${isImported ? 'imported' : ''}`} onClick={onImport} disabled={isImporting || isImported}>{isImporting ? (<span className="loading-spinner" />) : isImported ? (<><Check size={14} />{m.imported}</>) : (<><Download size={14} />{m.import}</>)}</button></div>
       </div>
       <style jsx>{`
@@ -1774,7 +1774,7 @@ function SkillCard({
       <div className="card-tags">{skill.tags.slice(0, 3).map(tag => (<span key={tag} className="tag">{tag}</span>))}{skill.tags.length > 3 && (<span className="tag-more">+{skill.tags.length - 3}</span>)}</div>
       {isExpanded && (<div className="card-details"><div className="detail-section"><h4>{m.skillMdContent}</h4><pre>{skill.skillContent}</pre></div>{skill.allowedTools && skill.allowedTools.length > 0 && (<div className="detail-section tools-section"><h4>{m.allowedTools}</h4><div className="tools-list">{skill.allowedTools.map((tool, i) => (<span key={i} className="tool-badge">{tool}</span>))}</div></div>)}</div>)}
       <div className="card-footer">
-        <div className="card-stats">Built-in template / 内置模板</div>
+        <div className="card-stats"><span className="stat-item"><Download size={14} />{skill.downloads.toLocaleString()}</span><span className="stat-item"><Star size={14} />{skill.rating}</span></div>
         <div className="card-actions"><button className="btn-preview" onClick={onToggleExpand}>{isExpanded ? m.hide : m.preview}</button><button className={`btn-import ${isImported ? 'imported' : ''}`} onClick={onImport} disabled={isImporting || isImported}>{isImporting ? (<span className="loading-spinner" />) : isImported ? (<><Check size={14} />{m.imported}</>) : (<><Download size={14} />{m.import}</>)}</button></div>
       </div>
       <style jsx>{`

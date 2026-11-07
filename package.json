@@ -64,7 +64,7 @@
   },
   "dependencies": {
     "@huggingface/transformers": "^3.5.1",
-    "better-sqlite3": "12.11.1",
+    "better-sqlite3": "^12.8.0",
     "electron-updater": "^6.7.3",
     "lucide-react": "^0.562.0",
     "next": "^16.0.0",
@@ -99,22 +99,7 @@
       "esbuild",
       "onnxruntime-node",
       "better-sqlite3"
-    ],
-    "overrides": {
-      "tar@>=7.0.0 <8.0.0": "7.5.21",
-      "next@>=16.0.0 <17.0.0": "16.4.5",
-      "protobufjs@>=7.0.0 <8.0.0": "7.6.1",
-      "adm-zip@>=0.0.0 <1.0.0": "0.6.1",
-      "js-yaml@>=4.0.0 <5.0.0": "4.3.2",
-      "sharp@>=0.0.0 <1.0.0": "0.35.5",
-      "postcss@>=8.0.0 <9.0.0": "8.5.18",
-      "builder-util-runtime@>=9.0.0 <10.0.0": "9.7.0",
-      "nanoid@>=3.0.0 <4.0.0": "3.3.18",
-      "browserslist@>=4.0.0 <5.0.0": "4.28.7",
-      "source-map-js@>=1.0.0 <2.0.0": "1.2.2",
-      "electron@<42.11.16": "42.11.16",
-      "node-abi": "4.40.0"
-    }
+    ]
   },
   "build": {
     "appId": "com.promptman.app",
@@ -300,9 +285,5 @@
       ],
       "artifactName": "${productName}-${version}-${env.BUILD_DATE}-linux-${arch}.${ext}"
     }
-  },
-  "engines": {
-    "node": ">=22.12.0"
-  },
-  "packageManager": "pnpm@10.34.5"
+  }
 }

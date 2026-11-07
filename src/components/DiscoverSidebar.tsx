@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import { FileText, Sparkles } from 'lucide-react'
 import { getFeaturedPrompts, getFeaturedSkills } from '@/lib/marketData'
 import { useLocale } from '@/lib/i18n'
@@ -28,7 +27,6 @@ export default function DiscoverSidebar({
 
   return (
     <div className="discover-sidebar">
-      <Link href="/projects" style={{display:"block",padding:"12px 8px",color:"var(--accent-color)"}}>SoloKit · Product task packs / 产品任务包 →</Link>
       <p className="discover-lead">{t.sidebar.marketDesc}</p>
 
       {showPrompts && (
